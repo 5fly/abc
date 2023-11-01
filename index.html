@@ -1,0 +1,38 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebCat</title>
+  </head>
+  <style>
+  *{
+    margin:0;
+    padding:0;
+    }
+  p::after{
+    content:"☜"
+    }
+  body{
+    color:white;
+    background:url("px.jpg");
+    background-size:100%;
+}
+  </style>
+  <body>
+  <video src="23.mp3" autoplay loop=></video>	
+ <p></p>
+ 
+ <script>
+ let p=document.querySelector("p")//定义P标签
+ let a="小颖没想到吧，我会这个时候发。嘿嘿。在这特别的日子里，我想对你说声祝福。感谢你一直以来的陪伴和友谊。希望你的生日充满快乐和幸福，愿你的未来充满成功和好运。如果前方的路不是很顺，但请相信自己，大步向前，加油吧，少年，你也会拥有光明的未来。小颖！愿你的生日充满欢笑和美好回忆，愿你的未来充满阳光和喜悦。感谢你一直以来的陪伴，期待我们一起创造更多美好的回忆。"
+ let i= 0
+ setInterval(function (){
+     if(i>=a.length){
+     return
+     }
+     p.innerText +=a[i]
+     i=i+1 
+ },300)
+ </script>
+  </body>
+</html>
